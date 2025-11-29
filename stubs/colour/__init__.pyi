@@ -1,0 +1,19 @@
+from typing import Any, Tuple
+
+class Color:
+    def __init__(
+        self,
+        color: str | None = None,
+        pick_for: Any | None = None,
+        rgb: Tuple[float, float, float] | None = None,
+        hsl: Tuple[float, float, float] | None = None,
+        **kwargs: Any,
+    ) -> None: ...
+    @property
+    def red(self) -> float: ...
+    @property
+    def green(self) -> float: ...
+    @property
+    def blue(self) -> float: ...
+    def get_rgb(self) -> Tuple[float, float, float]: ...
+    def __str__(self) -> str: ...
