@@ -1,6 +1,6 @@
 [project]
 name = "tinyviz"
-version = "0.1.0"
+version = "0.1.1"
 description = "Graph recorder and visualization helpers for tinygrad tensors."
 readme = "README.md"
 requires-python = ">=3.10"
