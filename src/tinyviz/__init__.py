@@ -27,7 +27,7 @@ class GraphRecorder(list):
         self.start()
         return self
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
+    def __exit__(self, _exc_type, _exc_val, _exc_tb):
         self.stop()
         return False
 
@@ -371,7 +371,7 @@ class record_graph:
         graph.start()
         return graph
 
-    def __exit__(self, exc_type, exc, tb):
+    def __exit__(self, _exc_type, _exc, _tb):
         graph.stop()
         return False
 
@@ -892,7 +892,7 @@ def _draw_pil(nodes, title="graph", path: str | None = "graph.png", scale: float
         x = pad
         mid_y = y + row_height // 2
 
-        def draw_matrix(mat, x0, y0, w, h):
+        def draw_matrix(mat, x0, y0, _w, _h):
             for i, r in enumerate(mat):
                 for j, v in enumerate(r):
                     c, _ = _color_for(v if v is not None else 0, lo, hi)
